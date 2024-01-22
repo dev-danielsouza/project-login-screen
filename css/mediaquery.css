@@ -11,7 +11,7 @@
 
 @media screen and (min-width: 768px) and (max-width:992px) {
     body {
-        background-image: linear-gradient(to top, var(--beige), var(--dark-blue) 70%);
+        background-image: linear-gradient(to top, var(--light-brown), var(--dark-blue) 70%);
     }
 
     #login-screen {
@@ -32,7 +32,7 @@
 
 @media screen and (min-width: 992px) {
     body {
-        background-image: linear-gradient(to top, var(--beige), var(--dark-blue) 70%);
+        background-image: linear-gradient(to top, var(--light-brown), var(--dark-blue) 70%);
     }
 
     #login-screen {
@@ -40,13 +40,21 @@
     }
     
     #login-screen-image {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
 
     #login-screen-form {
-        float: right;
+        float: left;
         width: 50%;
+    }
+
+    #login-screen-form > h1 {
+        font-size: 2em;
+    }
+
+    #login-screen-form > p {
+        font-size: 1.2em;
     }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaquery.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>Login screen</title>
 </head>
 <body>
@@ -17,7 +18,18 @@
                     <h1>Login</h1>
                     <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e fazer as configurações no seu ambiente.</p>
                     <form action="login.php" method="post" autocomplete="on">
-
+                        <div class="field-container">
+                            <box-icon name='user-circle' color='#fff8f8' ></box-icon>
+                            <input type="email" name="login" id="login" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                            <label for="login">Login</label>
+                        </div>
+                        <div class="field-container">
+                            <box-icon name='key' type='solid' color='#ffffff' ></box-icon>
+                            <input type="password" name="password" id="password" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                            <label for="password">Senha</label>
+                        </div>
+                        <input class="submit-button" type="submit" value="Entrar">
+                        <a class="forgot-password-button" href="#">Esqueci a senha <box-icon type='solid' name='envelope'></box-icon></a>
                     </form>
                 </div>
         </section>
