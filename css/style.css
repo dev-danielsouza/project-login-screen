@@ -10,3 +10,48 @@
     --light-brown: #A66E4E;
     --font-roboto: 'Roboto', sans-serif;
 }
+
+* {
+    font-family: var(--font-roboto);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--dark-blue);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login-screen {
+  background-color: #fff;
+  width: 15.625rem;
+  height: 31.25rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.450);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+
+#login-screen-image {
+    display: block;
+    background: var(--light-blue) url(../components/images/login-screen-image.jpg) no-repeat;
+    background-size: cover; 
+    height: 200px;
+}
+
+#login-screen-form {
+    display: block;
+    padding: 0.625rem;
+}
