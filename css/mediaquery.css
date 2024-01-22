@@ -16,6 +16,7 @@
 
     #login-screen {
         width: 80vw;
+        height: 17.5rem;
     }
 
     #login-screen-image {
@@ -28,6 +29,11 @@
         float: right;
         width: 70%;
     }
+
+    .field-container input {
+        width: calc(100% - 44px);
+        transform: translateY(-8px);
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -37,6 +43,7 @@
 
     #login-screen {
         width: 59.375rem;
+        height: 21.875rem;
     }
     
     #login-screen-image {
@@ -56,5 +63,11 @@
 
     #login-screen-form > p {
         font-size: 1.2em;
+        margin: 1.25rem 0;
+    }
+
+    .field-container input {
+        width: calc(100% - 44px);
+        transform: translateY(-7px);
     }
 }

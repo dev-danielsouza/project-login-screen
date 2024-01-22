@@ -42,10 +42,10 @@ main {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   
   transition: width .3s, height .3s;
   transition-timing-function: ease;
+  transform: translate(-50%, -50%);
 }
 
 #login-screen-image {
@@ -68,14 +68,16 @@ main {
 
 #login-screen-form > p {
     font-size: 0.8em;
+    text-align: center;
 }
 
 .field-container {
     background-color: var(--light-dark-blue);
+    border: 3px solid var(--light-dark-blue);
     width: 100%;
     height: 2.5rem;
     display: block;
-    border-radius: 0.313rem;
+    border-radius: 0.5rem;
     margin: 0.313rem 0;
 }
 
@@ -83,20 +85,46 @@ main {
     display: none;
 }
 
+.field-container box-icon {
+    color: #FFF;
+    font-size: 2em;
+    width: 2.5rem;
+}
+
+.field-container input {
+    background-color: #FFF;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: none;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 0.25rem;
+    transform: translateY(-7px);
+}
+
+.field-container input:focus-within {
+    background-color: #a9cde4de;
+    outline: none;
+}
+
 .submit-button {
     display: block;
     font-size: 1em;
     width: 100%;
     height: 2.5rem;
-    background-color: var(--dark-blue);
+    background-color: var(--light-brown);
     color: #fff;
     border: none;
+    border: 1px solid var(--light-brown);
     border-radius: 0.313rem;
     cursor: pointer;
 }
 
 .submit-button:hover {
-    background-color: var(--light-blue);
+    background-color: var(--beige);
+    border-color: var(--beige);
+    transition-duration: .3s;
 }
 
 .forgot-password-button {
@@ -107,7 +135,8 @@ main {
     height: 2.5rem;
     padding-top: 0.438rem;
     margin-top: 0.313rem;
-    background-color: #FFF;
+    background-color: var(--light-blue);
+    color: #FFF;
     border: 1px solid var(--light-blue);
     border-radius: 0.313rem;
     text-decoration: none; 
@@ -117,6 +146,12 @@ main {
     height: 0.8em;
 }
 
+.forgot-password-button > box-icon:hover {
+    color: #FFF;
+}
+
 .forgot-password-button:hover {
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue);
+    color: #FFF;
+    transition-duration: .3s;
 }
